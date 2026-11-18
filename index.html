@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b0b0b">
+<meta name="description" content="محمد قنديل للمقاولات والتسويق العقاري — تشطيبات ومقاولات سكنية بجودة واهتمام بالتفاصيل.">
+<title>محمد قنديل | للمقاولات والتسويق العقاري</title>
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap');
+:root{
+ --bg:#292929; --bg2:#333333; --panel:#3a3a3a; --panel2:#414141;
+ --gold:#d5ad65; --gold2:#efd49b; --text:#f6f1e8; --muted:#d0cbc1;
+ --line:#6b604e; --green:#d5ad65;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:'Cairo',Tahoma,Arial,sans-serif;line-height:1.9;font-size:16px}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1160px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:#303030f2;border-bottom:1px solid #d5ad6544;backdrop-filter:blur(12px);box-shadow:0 4px 22px #0002}
+.nav{min-height:86px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;color:var(--gold2)}
+.brand img{width:66px;height:66px;object-fit:contain;border-radius:10px;background:#171717}
+.brand span{font-size:16px;line-height:1.55;font-weight:800}
+nav{display:flex;gap:22px;align-items:center;font-size:15px;font-weight:700;color:var(--text)}
+nav a:hover{color:var(--gold2)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 24px;border-radius:9px;background:var(--gold);color:#252525;font-weight:900;font-size:16px;border:1px solid var(--gold);transition:.2s}
+.btn:hover{background:var(--gold2);border-color:var(--gold2);transform:translateY(-1px)}
+.btn.outline{background:transparent;color:var(--gold2);border:1px solid var(--gold)}
+.hero{min-height:690px;display:grid;align-items:center;position:relative;overflow:hidden;background:linear-gradient(90deg,#292929 0%,#292929ed 42%,#29292980 100%),url('assets/living-room.jpg') center/cover}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,var(--bg),transparent 22%);pointer-events:none}
+.hero-content{position:relative;z-index:1;max-width:790px;padding:94px 0}
+.eyebrow{color:var(--gold2);font-weight:800;font-size:19px;letter-spacing:.2px}
+.hero h1{font-size:clamp(54px,8.2vw,92px);line-height:1.28;letter-spacing:-.6px;margin:18px 0 22px;color:#fff;font-weight:900}
+.hero h1 em{font-style:normal;color:var(--gold2)}
+.hero p{color:#e4dfd6;font-size:20px;line-height:2.05;max-width:690px;font-weight:500}
+.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px}
+section{padding:86px 0}
+.section-head{text-align:center;margin:0 auto 42px;max-width:760px}
+.section-head small{color:var(--gold2);font-weight:800;font-size:17px;display:inline-block;margin-bottom:5px}
+.section-head h2{font-size:clamp(32px,4.6vw,48px);line-height:1.4;margin:6px 0 12px;color:var(--gold2);font-weight:900}
+.section-head p{color:var(--muted);margin:0;font-size:17px;line-height:1.9;font-weight:500}
+#about{background:#303030}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+.owner{width:100%;max-height:510px;object-fit:cover;border-radius:16px;border:1px solid #d5ad6577;box-shadow:0 16px 45px #0003}
+.about-copy h2{font-size:clamp(30px,4vw,43px);line-height:1.5;color:var(--gold2);margin:8px 0 16px;font-weight:900}
+.about-copy p{color:var(--muted);font-size:18px;line-height:2.05;font-weight:500}
+.services{background:#343434}
+.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.service{background:linear-gradient(145deg,#414141,#383838);padding:27px;border:1px solid #d5ad6540;border-radius:13px;box-shadow:0 8px 25px #0002}
+.service b{display:block;color:var(--gold2);font-size:21px;line-height:1.6;font-weight:900;margin-bottom:7px}
+.service p{color:#d5d0c7;margin:0;font-size:16px;line-height:1.9;font-weight:500}
+.videos{background:#292929}
+.video-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.video-card{background:#393939;border:1px solid #d5ad6544;border-radius:14px;padding:10px;overflow:hidden}
+.video-card.featured{grid-column:span 2}
+.video-frame{position:relative;aspect-ratio:9/16;background:#202020;border-radius:9px;overflow:hidden}
+.video-card.featured .video-frame{aspect-ratio:16/9}
+.video-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.video-link{display:block;text-align:center;color:var(--gold2);font-size:14px;font-weight:700;padding:11px 4px}
+.review-grid{display:grid;grid-template-columns:minmax(0,620px);justify-content:center}
+.review-card{overflow:hidden;border:1px solid #d5ad6555;border-radius:16px;background:#383838;box-shadow:0 14px 40px #0003}
+.review-card img{display:block;width:100%;height:auto;background:#fff}
+.review-caption{padding:22px 24px;text-align:center}
+.review-caption .stars{color:#f0bd4e;font-size:30px;letter-spacing:4px;line-height:1.4}
+.review-caption p{font-size:21px;color:var(--text);margin:9px 0;font-weight:800}
+.review-caption span{font-size:14px;color:var(--muted)}
+.cta{background:#414141;text-align:center;color:white;border-block:1px solid #d5ad6544}
+.cta h2{font-size:clamp(31px,4.4vw,44px);line-height:1.4;color:var(--gold2);margin:0 0 10px;font-weight:900}
+.cta p{color:#e1dcd3;font-size:18px}
+.cta .btn{background:var(--gold);border-color:var(--gold);color:#252525}
+#contact{background:#292929}
+.contact-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.contact-box{padding:23px;border-radius:12px;background:#393939;border:1px solid #d5ad6540;text-align:center;transition:.2s}
+.contact-box:hover{transform:translateY(-3px);background:#424242;box-shadow:0 10px 25px #0002}
+.contact-box strong{display:block;color:var(--gold2);margin-bottom:7px;font-size:18px;font-weight:900}
+.contact-box span{color:var(--muted);font-size:15px;font-weight:500}
+footer{padding:25px 0;text-align:center;color:#c8c1b5;border-top:1px solid #d5ad6533;font-size:14px;background:#303030}
+.float-wa{position:fixed;bottom:18px;left:18px;z-index:30;background:#20b96b;color:#fff;border-radius:40px;padding:13px 20px;font-weight:900;font-size:16px;box-shadow:0 6px 25px #0004}
+@media(max-width:800px){
+ nav{display:none}.hero{min-height:640px;background-position:58% center}
+ .hero-content{max-width:100%}.about-grid{grid-template-columns:1fr}
+ .owner{max-height:430px}.service-grid{grid-template-columns:repeat(2,1fr)}
+ .video-grid{grid-template-columns:repeat(2,1fr)}.video-card.featured{grid-column:span 2}
+ .contact-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:480px){
+ .nav{min-height:74px}.brand img{width:54px;height:54px}.brand span{font-size:13px}
+ .hero{min-height:650px;background-position:58% center}
+ .hero-content{padding:68px 0}.eyebrow{font-size:16px}
+ .hero h1{font-size:52px;line-height:1.34;margin:15px 0 18px}
+ .hero p{font-size:17px;line-height:2}
+ .actions .btn{width:100%}section{padding:66px 0}
+ .section-head h2{font-size:34px}.section-head p{font-size:16px}
+ .about-copy h2{font-size:31px}.about-copy p{font-size:17px}
+ .service-grid,.video-grid,.contact-grid{grid-template-columns:1fr}
+ .service{padding:23px}.service b{font-size:20px}.service p{font-size:16px}
+ .video-card.featured{grid-column:span 1}.video-card.featured .video-frame{aspect-ratio:9/16}
+ .cta h2{font-size:32px}.cta p{font-size:16px}
+}
+
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+  <a class="brand" href="#home"><img src="assets/logo.jpg" alt="شعار محمد قنديل"><span>محمد قنديل<br>للمقاولات والتسويق العقاري</span></a>
+  <nav><a href="#about">من نحن</a><a href="#services">خدماتنا</a><a href="#videos">معرض الفيديوهات</a><a href="#reviews">آراء العملاء</a><a href="#contact">تواصل معنا</a></nav>
+  <a class="btn" href="tel:01029500548">اتصل بنا</a>
+</div></header>
+<main>
+<section class="hero" id="home"><div class="wrap"><div class="hero-content">
+  <div class="eyebrow">خبرة واهتمام بالتفاصيل</div>
+  <h1>نحوّل مساحتك إلى <em>بيت تحلم به</em></h1>
+  <p>محمد قنديل للمقاولات والتسويق العقاري — تشطيبات سكنية ومقاولات نهتم فيها بجودة التنفيذ، وحسن اختيار التفاصيل، وتقديم حلول تناسب احتياجاتك وميزانيتك.</p>
+  <div class="actions"><a class="btn" href="https://wa.me/201029500548" target="_blank" rel="noopener">تواصل عبر واتساب</a><a class="btn outline" href="#videos">شاهد أعمالنا</a></div>
+</div></div></section>
+
+<section id="about"><div class="wrap about-grid">
+  <img class="owner" src="assets/owner.jpg" alt="المهندس محمد قنديل">
+  <div class="about-copy"><div class="eyebrow">من نحن</div><h2>محمد قنديل للمقاولات والتسويق العقاري</h2>
+  <p>نقدم خدمات المقاولات والتشطيبات السكنية، مع الاهتمام بالتفاصيل من بداية العمل وحتى اللمسات النهائية. هدفنا أن يحصل العميل على تنفيذ منظم وجودة واضحة وتجربة تعامل مريحة.</p>
+  <a class="btn" href="https://www.facebook.com/mohamedQandile0" target="_blank" rel="noopener">تابع أعمالنا على فيسبوك</a></div>
+</div></section>
+
+<section class="services" id="services"><div class="wrap">
+  <div class="section-head"><small>خدماتنا</small><h2>كل تفاصيل وحدتك في مكان واحد</h2><p>حلول للمباني والوحدات السكنية وفق طبيعة كل مشروع واحتياجات العميل.</p></div>
+  <div class="service-grid">
+    <article class="service"><b>تشطيب الشقق السكنية</b><p>تنفيذ أعمال التشطيب للوحدات السكنية والاهتمام بالتفاصيل النهائية.</p></article>
+    <article class="service"><b>التشطيب الكامل</b><p>تنسيق مراحل العمل للوصول إلى وحدة جاهزة للسكن وفق الاتفاق.</p></article>
+    <article class="service"><b>أعمال الديكور</b><p>لمسات جمالية وتفاصيل داخلية تضيف طابعًا مميزًا للمساحة.</p></article>
+    <article class="service"><b>أعمال الكهرباء والسباكة</b><p>تنفيذ وتجهيز الأعمال الأساسية ضمن خطة التشطيب.</p></article>
+    <article class="service"><b>المقاولات السكنية</b><p>خدمات مقاولات مرتبطة بالمباني والوحدات السكنية.</p></article>
+    <article class="service"><b>التسويق العقاري</b><p>التواصل بشأن خدمات التسويق العقاري والاستفسار عن الوحدات.</p></article>
+  </div>
+</div></section>
+
+<section class="videos" id="videos"><div class="wrap">
+  <div class="section-head"><small>من أرض الواقع</small><h2>شاهد بعض أعمالنا</h2><p>جولات ومقاطع من مشروعاتنا المنشورة على صفحة فيسبوك. اضغط على الرابط أسفل الفيديو إذا لم يسمح فيسبوك بتشغيله داخل الموقع.</p></div>
+  <div class="video-grid">
+
+      <article class="video-card featured">
+        <div class="video-frame">
+          <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1713766433509126%2F&show_text=false&width=500" title="فيديو من أعمال الشركة 1" loading="lazy"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+        <a class="video-link" href="https://www.facebook.com/reel/1713766433509126/" target="_blank" rel="noopener">مشاهدة الفيديو على فيسبوك ↗</a>
+      </article>
+
+      <article class="video-card">
+        <div class="video-frame">
+          <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1122605740631757%2F&show_text=false&width=500" title="فيديو من أعمال الشركة 2" loading="lazy"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+        <a class="video-link" href="https://www.facebook.com/reel/1122605740631757/" target="_blank" rel="noopener">مشاهدة الفيديو على فيسبوك ↗</a>
+      </article>
+
+      <article class="video-card">
+        <div class="video-frame">
+          <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1772264347370471%2F&show_text=false&width=500" title="فيديو من أعمال الشركة 3" loading="lazy"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+        <a class="video-link" href="https://www.facebook.com/reel/1772264347370471/" target="_blank" rel="noopener">مشاهدة الفيديو على فيسبوك ↗</a>
+      </article>
+
+      <article class="video-card">
+        <div class="video-frame">
+          <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1112111421317141%2F&show_text=false&width=500" title="فيديو من أعمال الشركة 4" loading="lazy"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+        <a class="video-link" href="https://www.facebook.com/reel/1112111421317141/" target="_blank" rel="noopener">مشاهدة الفيديو على فيسبوك ↗</a>
+      </article>
+
+      <article class="video-card">
+        <div class="video-frame">
+          <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1334747275056166%2F&show_text=false&width=500" title="فيديو من أعمال الشركة 5" loading="lazy"
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+        <a class="video-link" href="https://www.facebook.com/reel/1334747275056166/" target="_blank" rel="noopener">مشاهدة الفيديو على فيسبوك ↗</a>
+      </article>
+    </div>
+</div></section>
+
+<section class="cta"><div class="wrap"><h2>جاهز تبدأ تشطيب وحدتك؟</h2><p>تواصل معنا لمناقشة احتياجاتك وطلب معاينة أو مقايسة.</p><a class="btn" href="https://wa.me/201029500548" target="_blank" rel="noopener">اطلب التواصل الآن</a></div></section>
+
+
+<section id="reviews" class="services">
+  <div class="wrap">
+    <div class="section-head">
+      <small>ثقة عملائنا</small>
+      <h2>آراء العملاء</h2>
+      <p>رضا العملاء وجودة التنفيذ والالتزام بالمواعيد هي أساس نجاحنا.</p>
+    </div>
+    <div class="review-grid">
+      <article class="review-card">
+        <img src="assets/customer-review-1.jpg" alt="لقطة من تقييم عميل بخمس نجوم">
+        <div class="review-caption">
+          <div class="stars" aria-label="خمس نجوم">★★★★★</div>
+          <p>«من أفضل الشركات في المواعيد والجودة»</p>
+          <span>تقييم عميل — كما ورد في الصورة المرسلة</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="contact"><div class="wrap">
+  <div class="section-head"><small>تواصل معنا</small><h2>يسعدنا استقبال استفسارك</h2><p>تواصل معنا هاتفيًا أو عبر واتساب، أو زر موقعنا على الخريطة.</p></div>
+  <div class="contact-grid">
+    <a class="contact-box" href="tel:01029500548"><strong>اتصال مباشر</strong><span>01029500548</span></a>
+    <a class="contact-box" href="https://wa.me/201029500548" target="_blank" rel="noopener"><strong>واتساب</strong><span>راسلنا مباشرة</span></a>
+    <a class="contact-box" href="https://maps.app.goo.gl/p9P5yUvJCH5p2xzA9" target="_blank" rel="noopener"><strong>موقعنا</strong><span>افتح الموقع على خرائط جوجل</span></a>
+    <a class="contact-box" href="https://www.facebook.com/mohamedQandile0" target="_blank" rel="noopener"><strong>فيسبوك</strong><span>تابع صفحتنا وأعمالنا</span></a>
+  </div>
+</div></section>
+</main>
+<footer><div class="wrap">© <span id="year"></span> محمد قنديل للمقاولات والتسويق العقاري — جميع الحقوق محفوظة</div></footer>
+<a class="float-wa" href="https://wa.me/201029500548" target="_blank" rel="noopener">واتساب</a>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body></html>
